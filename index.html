@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>nav-bar</title>
+</head>
+
+<body>
+
+  <div id="nav-bar">
+    <div id='company'>
+      <i class="fab fa-airbnb"></i>
+      <a href="#">AirBnb</a>
+    </div>
+    <div id='menu'>
+      <ul>
+        <li><a href="">Home</a> </li>
+        <li><a href="">Gallery</a> </li>
+        <li><a href="">Weddings</a> </li>
+        <li><a href="">FAQ</a> </li>
+        <li><a href="">Bookings</a> </li>
+      </ul>
+    </div>
+    <div id='icons'>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook-square"></i>
+    </div>
+  </div>
+  <i id='bars' class="fas fa-bars"></i>
+
+  <script>
+    const bars = document.getElementById('bars');
+    bars.addEventListener('mouseover', () => {
+      document.getElementById('menu').classList.toggle('active');
+      document.getElementById('icons').classList.toggle('active');
+    })
+    bars.addEventListener('mouseout', () => {
+      document.getElementById('menu').classList.toggle('active');
+      document.getElementById('icons').classList.toggle('active');
+    }) 
+  </script>
+</body>
+
+</html>
